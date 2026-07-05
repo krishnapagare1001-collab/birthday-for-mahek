@@ -35,4 +35,9 @@ function openLetter() {
       </p>
     `;
   }, 2000);
+}/* Smooth floating animation fix */
+@keyframes floatUp {
+  0% { transform: translateY(100vh); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10vh); opacity: 0; }
 }
